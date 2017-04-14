@@ -20,18 +20,29 @@
                 <div class="panel-body">
                     <form name="formulario">
                         <fieldset>
-                            <label for="sex">Select Sex:</label>
-                            <select class="form-control" id="sex">
-                             <option>Male</option>
-                             <option>Female</option>
-                           </select>
-                            <div class="form-group">
-                                <label for="sel1">Weight:</label>
-                                <input class="form-control" placeholder="Weight" name="weight" type="text" autofocus="">
-                            </div>
                             <div class="form-group">
                                 <label for="sel1">Height:</label>
-                                <input class="form-control" placeholder="Height" name="height" type="text" autofocus="">
+                                <div class="input-group input-group-lg">
+
+                                    <span class="input-group-addon" id="sizing-addon1">Meters</span>
+                                    <input type="text" class="form-control" placeholder="Height" aria-describedby="sizing-addon1" name="height">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sel1">Weight:</label>
+                                <div class="input-group input-group-lg">
+
+                                    <span class="input-group-addon" id="sizing-addon1">Kilograms</span>
+                                    <input type="text" class="form-control" placeholder="Weight" aria-describedby="sizing-addon1" name="weight">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="sex">Select Sex:</label>
+                                <select class="form-control" id="sex">
+                              <option>Male</option>
+                              <option>Female</option>
+                            </select>
                             </div>
                             <button class="btn btn-sm btn-success" type="button" onclick="calcular()">Calcular</a>
                         </fieldset>
